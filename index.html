@@ -228,7 +228,36 @@
 
   <div class="divider"></div>
 
-  <form id="bookingForm" action=https://formspree.io/f/mgopkbdo" method="POST">
+  <form action="https://formspree.io/f/mykbwvlw" method="POST" id="bookingForm">
+
+  <!-- Name -->
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="name" required />
+
+  <!-- Email -->
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="email" required />
+
+  <!-- Phone (optional but useful for travel bookings) -->
+  <label for="phone">Phone Number</label>
+  <input type="tel" id="phone" name="phone" />
+
+  <!-- Travel Details -->
+  <label for="destination">Destination</label>
+  <input type="text" id="destination" name="destination" required />
+
+  <label for="dates">Travel Dates</label>
+  <input type="text" id="dates" name="dates" placeholder="MM/DD/YYYY - MM/DD/YYYY" required />
+
+  <label for="message">Additional Details</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <!-- Optional hidden field (helps identify submissions) -->
+  <input type="hidden" name="_subject" value="New Travel Booking Request" />
+
+  <button type="submit">Submit Booking</button>
+
+</form>>
     <div class="form-grid">
 
       <div class="form-group">
